@@ -10,15 +10,11 @@ public class RandomColor : MonoBehaviour {
 
         _renderer = this.GetComponent<Renderer>();
     }
-    // Use this for initialization
-    void Start () {
+
+    private void Start() {
+        
         changeColor();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
 
     public Color GetColor() {
 
@@ -26,6 +22,7 @@ public class RandomColor : MonoBehaviour {
     }
 
     public void changeColor() {
+        
         _renderer.material.color = new Color(Random.value, Random.value, Random.value, 1.0f);
     }
 }

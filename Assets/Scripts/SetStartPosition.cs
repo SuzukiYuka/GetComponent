@@ -4,13 +4,8 @@ using UnityEngine;
 
 public class SetStartPosition : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    private void Start() {
+        
         transform.position = new Vector3(0f, 2f, 0f);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
 }
